@@ -79,6 +79,8 @@ app.use(function (err, req, res, next) {
 	});
 });
 
-app.listen(3000, function () {
+let server = app.listen(3000, function () {
 	console.log("App hosted at localhost:3000");
 });
+
+module.exports = { app, server };
